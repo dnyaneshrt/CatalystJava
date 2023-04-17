@@ -22,6 +22,6 @@ public class MethodOverloadingTest {
         MethodOverloadingTest methodOverloadingTest=new MethodOverloadingTest();
         methodOverloadingTest.add();//methoad calling
         methodOverloadingTest.add(10,20);//methoad calling byy passing parms
-        methodOverloadingTest.add(10,20,30);//methoad calling byy passing parms
+        methodOverloadingTest.add(10,20,30);//methoad calling by passing parms
     }
 }
