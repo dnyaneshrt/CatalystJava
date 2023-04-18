@@ -25,3 +25,5 @@ public class MethodOverloadingTest {
         methodOverloadingTest.add(10,20,30);//methoad calling by passing parms
     }
 }
+
+//can we change the return types in overloading?    yes

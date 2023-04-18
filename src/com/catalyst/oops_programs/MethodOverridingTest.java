@@ -9,10 +9,16 @@ class OppoA5
     {
         System.out.println("oppo A5 has 32 mp camera");
     }*/
-   void camera()
+  void camera()
   {
       System.out.println("oppo A5 has 32 mp camera");
   }
+
+ /*   Number camera()
+  {
+      System.out.println("oppo A5 has 32 mp camera");
+      return 0;
+  }*/
     void sim()
     {
         System.out.println("oppo A5 has 2 sim cards");
@@ -25,6 +31,12 @@ class OppoA5
 class OppoA9 extends OppoA5
  {
      @Override
+   /* Integer camera()
+     {
+         System.out.println("oppo A9 has 64 mp camera");
+         return 0;
+     }*/
+
      void camera()
      {
          System.out.println("oppo A9 has 64 mp camera");
@@ -40,3 +52,12 @@ public class MethodOverridingTest {
         a5.music();
     }
 }
+
+
+/*Advantages of Covariant Return Type
+
+//can we change the return types in overloading?    yes[Covariant Return Type]
+1) Covariant return type assists to stay away from the confusing type casts in the class hierarchy and makes the code more usable, readable, and maintainable.
+2) In the method overriding, the covariant return type provides the liberty to have more to the point return types.
+3) Covariant return type helps in preventing the run-time ClassCastExceptions on returns.
+*/
