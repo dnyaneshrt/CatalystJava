@@ -7,7 +7,7 @@ iii] if you declare any class as final, we cannot extend any other class from th
 public class FinalTest {
     public static void main(String[] args) {
         final int num=100;
-//        num=101; // re-assign
+//        num=101; //cannot re-assign
         System.out.println(num);
     }
 }
