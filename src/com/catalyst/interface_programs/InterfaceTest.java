@@ -11,13 +11,10 @@ package com.catalyst.interface_programs;
 * "implements" keyword iis used to achieve the inheritance.. if child is class and Parent is interface.
 * multiple inheritance is supported in case of interface.. (single class can have multiple parents as an interfaces..)
 * FunctionalInterface: Interface with Single Abstract Method is called as Functional Interface.
-* Marker Interface: Empty interface is called as Marker interface.  (Serializable and Cloneable)
+* Marker Interface: Empty interface is called as Marker interface.  (Serializable, Cloneable, RandomAccess, Remote)
 *
 * sublcass has to provide implementation to all the abstract methods which are there in Parent interfaces.
 * */
-
-
-import java.io.Serializable;
 
 interface Bank
 {
@@ -26,13 +23,11 @@ interface Bank
 }
 class SBI implements Bank
 {
-
     @Override
     public void provideLoanInfo() {
         System.out.println("SBI provides car Loan @10.00 ROI");
     }
 }
-
 class ICICI implements Bank
 {
     @Override
@@ -40,7 +35,6 @@ class ICICI implements Bank
         System.out.println("ICICI provides car Loan @10.50 ROI");
     }
 }
-
 public class InterfaceTest {
 
     public void applyForLoan(Bank bank)
@@ -81,3 +75,14 @@ public class InterfaceTest {
 
     }
 }
+
+/*diff between and abstract methods and interface.
+
+i]abstract class contains abstract as well as non-abstract methods.
+ii]interface contains asbtract, default, static, private methods.
+
+ii]abstract class won't support multiple inheritance.
+ii]interface supports multiple inheritance.
+
+
+* */

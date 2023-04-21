@@ -13,9 +13,10 @@ it is the process of knowing imp details to be known and ignoring non-imp detail
 
 //non-abstract class(concrete class) without abstract keyword.
 
-
+//Abstract classes may also have constructors which will get executed during the child object's instantiation.
 abstract class Shape
 {
+
     public abstract void area(); //this is abstract method
     public  void sayHi()
     {
