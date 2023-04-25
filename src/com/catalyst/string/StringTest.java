@@ -6,8 +6,8 @@ package com.catalyst.string;
 //char:  'a','b','c','1','2','@','*'.
 //char[] =String
 //2 ways to create String in java.
-/*1. String var_name="any string";
-* 2. String var_name=new String("any String");
+/*1. String var_name="any string";  //using string literal
+* 2. String var_name=new String("any String");  //by using new keyword
 *
 * length() gives the count of total chars avaliable in String (including space and any chars as well).
 * charAt(index); gives the character for given index.
