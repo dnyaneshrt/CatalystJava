@@ -1,4 +1,7 @@
 package com.catalyst.arrays;
+
+import java.util.Arrays;
+import java.util.Scanner;
 /*
 -Array is collection of similler type of data elements.
 -Array declaration.
@@ -8,26 +11,40 @@ int[] nums=new int[10];
 -array index always starts with zero and ends with [array-size -1]
 -the moment we declare the array with specified size, array will be filled with the default values of that type of array for all size.
 -array always stores in contiguos memory locations.
-
-
 */
 public class ArrayTest1 {
     public static void main(String[] args) {
-        int[] nums=new int[5]; //array declaration with size 5.
 
-        nums[0]=77788;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("please enter the size of array");
+        int size=sc.nextInt();
+
+        int[] nums=new int[size]; //array declaration with size by taking user.
+
+      /*nums[0]=sc.nextInt();
+        nums[1]=sc.nextInt();*/
+        System.out.println("enter the values in array");
+        for(int i=0;i<size;i++)
+        {
+            nums[i]=sc.nextInt();
+        }
+    /*    nums[0]=77788;
         nums[4]=11111;
         nums[2]=7778;
         nums[3]=667;
-        nums[1]=777;
+        nums[1]=777;*/
         System.out.println("the length of above array is :"+nums.length);
         for(int i=0;i< nums.length;i++)
         {
             System.out.println(nums[i]);//0,1,2,3,4
         }
-
+        Arrays.sort(nums);
+        System.out.println("array after sorting::");
+        for(int i=0;i< nums.length;i++)
+        {
+            System.out.println(nums[i]);//0,1,2,3,4
+        }
         System.out.println("the value is at index no. 3 is :"+nums[3]);
-
         System.out.println("max number from above array is :"+findMaxValue(nums));  //method calling by passing an array
         System.out.println("min number from above array is :"+findMinValue(nums));  //method calling by passing an array
 
@@ -67,7 +84,6 @@ public class ArrayTest1 {
 
     private static int findMinValue(int[] nums) {
         int min=nums[0];
-
         for(int i=0;i< nums.length;i++)
         {
             if(nums[i]<min)
