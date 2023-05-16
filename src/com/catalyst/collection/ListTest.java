@@ -5,6 +5,7 @@ import java.util.*;
 //arraylist is growable in nature.
 //arraylist maintains insertion order.
 //arralist allows duplicate values.
+//arraylist allows any no.of null values.
 public class ListTest {
     public static void main(String[] args) {
 
@@ -56,7 +57,7 @@ public class ListTest {
         {
             System.out.println(it1.next());
         }
-
+      //Collection is an interface.. Collections is class.
         Collections.sort(students, Comparator.reverseOrder()); //will sort in ascendng order
 
         System.out.println("traversing list by using Iterator after sorting in reverse order");
