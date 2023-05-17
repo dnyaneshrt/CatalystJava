@@ -38,7 +38,6 @@ public class ListTest2 {
         System.out.println("students whose firstname starts with 's' is below using java 8:");
         students.stream().filter(s->s.getFirstname().startsWith("s")).forEach(System.out::println);
 
-
         System.out.println("students from sangali count:");
         System.out.println(students.stream().filter(s->s.getAddress().equals("buldhana")).count());
 
