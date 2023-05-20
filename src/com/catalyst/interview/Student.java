@@ -11,7 +11,6 @@ public class Student {
                 ", lastname='" + lastname + '\'' +
                 '}';
     }
-
     public Student(String firstname, String lastname) {
         this.firstname = firstname;
         this.lastname = lastname;
